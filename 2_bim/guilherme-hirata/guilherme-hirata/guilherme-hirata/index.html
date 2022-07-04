@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <meta name="description" content="Portfolio de Guilherme Hirata">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Guilherme Hirata">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Guilherme Hirata</title>
+  <link rel="icon" type="image/x-icon" href="./src/img/icons/icon.svg">
+</head>
+
+<body>
+  <div class="loadingScreen">
+    <p>Bem-vindo!</p>
+    <div class="loadingIcon"></div>
+  </div>
+  <div class="hello">
+    <header>
+      <div class="header">
+        <div class="logo">
+          &lt;/Guilherme Hirata&gt;
+        </div>
+        <div class="header-menu">
+          <nav>
+            <ul>
+              <li><a href="#sobre" class="active" >Sobre</a></li>
+              <li><a href="#portfolio" >Portfolio</a></li>
+              <li><a href="#contato">Contato</a></li>            
+                <button class="btn">Curriculo<img src="./src/img/icons/download.svg" alt="Download"></button>
+              </a>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-opener">
+          <div class="menu-opener--hamb"></div>
+        </div>
+      </div>
+      <div class="percent"></div>
+    </header>
+
+    <div class="portfolio-modal">
+      
+      <span>&times;</span>
+      <img src="./media/sites/skeleton.png" alt="site">
+    </div>
+
+
+    <div class="intro">
+
+      <div class="intro-left" data-animation="left">
+        <h2>- Olá, me chamo Guilherme Hirata <img src="./src/img/icons/wave.gif"></h2>
+        <h1>Estudante de<br>Sistemas de Informação</h1>
+        <p>Apaixonado por tecnologia.</p>
+        <a href="mailto:guilherme.hirata12@gmail.com">.FaleComigo( );</a>
+      </div>
+
+      <div class="intro-right" data-animation="right">
+        <img src="./media/hello.png" alt="Imagem">
+      </div>
+
+    </div>
+    <div class="arrowDown" data-animation="arrow">
+      <span>Conheça-me!</span>
+      <img src="./src/img/icons/arrowDown.svg" alt="arrowDown">
+    </div>
+  </div>
+
+  <section class="about" id="sobre">
+    <div class="section-body">
+      <div class="section-right" >
+        <div class="about-type">Introdução</div>
+        <div class="about-title">Um pouco sobre mim.
+          <h6>Olá, meu nome é Guilherme Hirata, tenho 19 anos e ou aluno do curso de Sistemas de informação 
+            na Univille e busco ampliar meus conhecimentos por meio da pratica e de estudos. </h6>
+
+             <table>
+              <caption>Minhas informaçõens</caption>
+              <tr>
+                  <td>
+                      Nome: Guilherme Satoshi Drefahl Hirata
+                  </td>
+                  <td></td>
+                  <td>
+                      Telefone: (47) 996200107
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      Data de Nascimento: 29/12/2002
+                  </td>
+                  <td></td>
+                  <td>
+                    E-mail: guilherme.hirata12@gmail.com
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                    Endereço: Joinville/SC
+                </td>
+            </tr>
+          </table>
+
+        </div>
+       
+        <div class="about-desc">
+          <div class="about"></div>
+          <div class="infos">
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <div class="stacks">
+    
+      <div class="stacks-chevron"></div>
+  </div>
+
+  <section class="portfolio" id="portfolio">
+    <div class="section-body">
+      <h2 class="section-title">Portfolio</h2>
+      <p>Projetos feitos.</p>
+      <div class="portfolio-grid">
+
+        <div class="grid-item" data-animation="bottom">
+
+          <a href="" target="_blank">
+            <img src="./media/sites/skeleton.png" alt="Imagem">
+          </a>
+          <div class="grid-item-container">
+
+
+            <div class="grid-item-desc">
+              Apresentação, Curriculo e Informaçoens de Guilherme Hirata
+            </div>
+            <div class="grid-item-buttons">
+              <a href=""><img src="./src/img/social/github.svg" alt="">Código</a>
+              <a href=""><img src="./src/img/social/site.svg" alt="">Site</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="arrowDown" data-animation="arrow">
+      <span>Fale comigo!</span>
+      <img src="./src/img/icons/arrowDown.svg" alt="arrowDown">
+    </div>
+
+    </div>
+  </section>
+
+  <div class="divider" id="contato"></div>
+  <footer>
+    <section class="footer">
+      <div class="section-body">
+
+        <div class="logo">
+          &lt;/Guilherme Hirata&gt;
+          <div class="network">
+
+          </div>
+        </div>
+
+        <div class="footer-email" data-animation="bottom">
+          <form>
+
+            <div class="form-line">
+              <input id="em-name" type="text" placeholder="Nome">
+              <input id="em-email" type="email" placeholder="Email">
+            </div>
+
+            <div class="form-line">
+              <input id="em-subject" type="text" placeholder="Assunto">
+            </div>
+
+            <div class="form-line">
+              <textarea id="em-message" cols="30" rows="10" placeholder="Mensagem"></textarea>
+            </div>
+
+            <div class="form-line">
+              <button class="btn" onclick="sendEmail()" type="submit">Enviar</button>
+            </div>
+
+          </form>
+        </div>
+
+       
+      </div>
+    </section>
+    <div class="copyright">
+      Copyright © 2022 | design e desenvolvimento - Guilherme Hirata
+    </div>
+  </footer>
+
+  <script src="./src/js/data.js"></script>
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>
